@@ -23,4 +23,5 @@ Disabled UEFI
 
 # Note
 Some parts include the code from OSDev's wiki Bare Bones tutorial, mainly the assembly file
+Credits for the barebones tutorial go to OSDev wiki, and inspiration from ReactOS 
 Please note that this is my first ever bootable custom written "OS" so it has tutorial parts
