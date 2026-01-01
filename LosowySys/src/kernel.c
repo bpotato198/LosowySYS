@@ -11,7 +11,7 @@
 // #define VGAHEIGHT 25
 // #define VGAMEM 0xB8000
 
-#define kernelver "0.59BETA"
+#define kernelver "0.60BETA"
 
 /*
 
@@ -117,16 +117,18 @@ void kernel(void) {
     terminit();
     terminal_setcolor(vga_entry_color(VGA_COLOR_WHITE, VGA_COLOR_BLACK));
     terminal_writestring("Hello from LosowySYS ");
-    terminal_writestring("Its a small, written in C microkernel in 5 secs it will change colors ");
+    terminal_writestring("Its a small, written in C microkernel in some time it will change colors");
     terminal_writestring(kernelver);
     sleep(5000);
     for (int i = 0; i < 10000; i++) {
         changebg(VGA_COLOR_RED);
-        sleep(1500);
+        sleep(4000);
         changebg(VGA_COLOR_GREEN);
-        sleep(1500);
+        sleep(4000);
         changebg(VGA_COLOR_BLUE);
-        sleep(1500);
+        sleep(4000);
+        changebg(VGA_COLOR_CYAN);
+        sleep(4000);
     }
     
     
