@@ -1,0 +1,3 @@
+Test on Virtualbox (Non UEFI) - Works
+Add more colors
+Make sleep actually work
